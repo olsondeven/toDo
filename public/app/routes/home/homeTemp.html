@@ -1,1 +1,27 @@
-<p>Testing site: </p>{{test}}
+<div class="container">
+    <div class="todo"><h1 class="title">Todo</h1>
+        <hr />
+        <div ng-repeat="toDo in toDoArray">{{toDo.action}}</div>
+    </div>
+
+
+    <div class="inProcess"><h1 class="title">In Process</h1>
+        <hr />
+        <div ng-repeat="toDo in toDoArray">
+            <input type="checkbox" ng-model="toDo.inProcess"  />
+        </div>
+
+    </div>
+
+
+    <div class="completed"><h1 class="title">Completed</h1>
+        <hr />
+        <div ng-repeat="toDo in toDoArray">
+            <input type="checkbox" ng-model="toDo.completed"  />
+        </div>
+    </div>
+
+</div>
+<br />
+<input type="text" name="toDoInput" />
+<button>Save</button>

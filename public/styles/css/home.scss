@@ -1,4 +1,42 @@
 @import '../styles';
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+
+}
+
 p{
   background-color: red;
 }
+
+
+
+.title {
+  text-align: center;
+  font-size: 40px;
+}
+
+.container {
+  height: 400px;
+  display: flex;
+  justify-content: space-between;
+  .todo {
+    padding: 25px;
+    width: 33%;
+    background-color: red;
+  }
+  .inProcess {
+    padding: 25px;
+    width: 33%;
+    background-color: blueviolet;
+  }
+  .completed {
+    padding: 25px;
+    width:33%;
+    background-color: yellow;
+
+  }
+}
+
